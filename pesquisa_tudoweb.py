@@ -18,7 +18,7 @@ for i in range(1, 51):
         try:
             idade = int(input("Digite a idade (apenas números): "))
             if idade < 0 or idade > 120:
-                print("Idade inválida! Digite uma idade entre 0 e 120.")
+                print("Idade inválida")
             else:
                 break
         except ValueError:
@@ -35,7 +35,7 @@ for i in range(1, 51):
             if opiniao in [1, 2, 3]:
                 break
             else:
-                print("Opção inválida! Digite apenas 1, 2 ou 3.")
+                print("Opção inválida")
         except ValueError:
             print("Por favor, digite apenas o número da opção.")
     
