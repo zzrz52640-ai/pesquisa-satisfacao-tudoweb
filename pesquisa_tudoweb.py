@@ -7,8 +7,8 @@ print("=" * 60)
 excelente = 0
 ruim = 0
 
-# Loop FOR para 50 entrevistados (para teste inicial, pode mudar para 10)
-for i in range(1, 51):   # Altere para range(1, 11) para testar com 10 entrevistados
+# Loop FOR para 50 entrevistados
+for i in range(1, 51):
     print(f"\n--- Entrevistado {i} de 50 ---")
     
     nome = input("Digite o nome do entrevistado: ").strip()
@@ -24,7 +24,7 @@ for i in range(1, 51):   # Altere para range(1, 11) para testar com 10 entrevist
         except ValueError:
             print("Por favor, digite apenas números para a idade.")
     
-    # Opinião com estrutura de decisão
+    # Opinião/ estrutura
     while True:
         print("\nOpinião sobre o atendimento:")
         print("1 - EXCELENTE")
@@ -39,7 +39,7 @@ for i in range(1, 51):   # Altere para range(1, 11) para testar com 10 entrevist
         except ValueError:
             print("Por favor, digite apenas o número da opção.")
     
-    # Contagem usando estruturas de decisão (if/elif)
+    # Contagem usando estruturas de decisão
     if opiniao == 1:
         excelente += 1
         print(f"{nome} avaliou como EXCELENTE ✓")
@@ -49,7 +49,7 @@ for i in range(1, 51):   # Altere para range(1, 11) para testar com 10 entrevist
     else:
         print(f"{nome} avaliou como BOM")
 
-# Resultados finais
+# Resultados finais sendo esses
 print("\n" + "=" * 60)
 print("          RESULTADO DA PESQUISA - TUDOWEB")
 print("=" * 60)
